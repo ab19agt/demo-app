@@ -3,17 +3,33 @@
     <div class="row justify-content-center">
       <div class="col-md-8">
         <div class="card">
-          <div class="card-header">Home</div>
+          <div class="card-header">User Register</div>
 
-          <div class="card-body">Home Page</div>
+          
+
+          <div class="card-body">
+            
+            
+            <router-link class="nav-link"
+            data-toggle="collapse"
+            :to="{name: 'login'}">
+            New user?</router-link>
+
+          </div>
+
+          
+
         </div>
+        
       </div>
     </div>
   </div>
 </template>
 
 <script>
-export default {
+//import LoginForm  from '../components/LoginForm';
+export default{
+    name:'Home',
     
 }
 </script>
